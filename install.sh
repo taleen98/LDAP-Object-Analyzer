@@ -13,8 +13,3 @@ apt-get install figlet
 
 apt install lolcat  
 
-##########################
-####install gobuster #### 
-######################### 
-
-apt install gobuster
