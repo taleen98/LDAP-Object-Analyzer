@@ -94,3 +94,6 @@ while IFS= read -r dn; do
         echo -e "${RED}Error: Unable to determine the group type for DN: $dn${RESET}"
     fi
 done < "DNs.txt"
+echo 
+echo -e "${GREEN}All Found Usernames Have Been Saved To File${RESET} ${BOLD_GREEN} Users.txt${RESET}"
+echo -e "${GREEN}All Found Users' Description Have Been Saved To File${RESET} ${BOLD_GREEN}Description.txt${RESET}"
