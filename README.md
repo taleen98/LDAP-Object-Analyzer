@@ -6,15 +6,19 @@ The LDAP Object Analyzer is a BashScript tool designed to help Penetration Teste
 ```
 git clone https://github.com/taleen98/LDAP-Object-Analyzer.git
 ```
-#### 2- To provide executive permissions to our bashscript files:
+#### 2- To enter the tool's directory:
+```
+cd LDAP-Object-Analyzer/
+```
+#### 3- To provide executive permissions to our bashscript files:
 ```
 chmod +x install.sh ldap.sh
 ```
-#### 3- To install the requirements:
+#### 4- To install the requirements:
 ```
 ./install.sh
 ```
-#### 4- To execute the tool:
+#### 5- To execute the tool:
 ```
 ./ldap.sh
 ```
