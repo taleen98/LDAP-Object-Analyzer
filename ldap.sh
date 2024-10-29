@@ -80,8 +80,8 @@ ldapsearch -H ldap://$DCIP -x -b "DC=$dc1,DC=$dc2" "(objectClass=*)" sAMAccountN
         sAMAccountName = "";
         description = "";
     }
-    /^sAMAccountName:/ { sAMAccountName = $2; }
-    /^description:/ { description = $2; }
+    /^sAMAccountName:/ { sAMAccountName = substr($0, index($0, ":") + 2); }
+    /^description:/ { description = substr($0, index($0, ":") + 2); }
     /^$/ {
         if (sAMAccountName && description) {
             print "sAMAccountName: " sAMAccountName ", description: " description;
